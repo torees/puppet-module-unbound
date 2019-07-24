@@ -4,6 +4,8 @@
 server:
 
         verbosity: 1
+        
+        interface: 0.0.0.0
 
         statistics-interval: 0
         statistics-cumulative: no
@@ -30,6 +32,8 @@ server:
         prefetch-key: yes
         rrset-roundrobin: yes
         minimal-responses: yes
+
+        access-control: 127.0.0.0/8 allow
 
         module-config: "ipsecmod validator iterator"
         root-hints: "/etc/unbound/root-hints"
