@@ -8,7 +8,7 @@ class unbound {
 
   File {
     owner   => 'root',
-    group   => 'root',
+    group   => 'unbound',
     mode    => '0644',
     require => Package['unbound'],
     notify  => [Service['unbound'], Exec['unbound-checkconf']],
@@ -24,6 +24,12 @@ class unbound {
 
   file { '/etc/unbound/root.hints':
     source  => 'puppet:///modules/unbound/root.hints',
+  }
+
+  file{'/etc/unbound/conf.d':
+    ensure  => directory,
+    recurse => true,
+    purge   => true,
   }
 
   service {'unbound':

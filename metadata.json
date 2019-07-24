@@ -1,10 +1,12 @@
 {
   "name": "tsaterdal-unbound",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Tore Saeterdal",
   "summary": "This module sets up a recursive DNS service with root hints using the unbound package.",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "This module sets up a recursive DNS service with root hints using the unbound package.",
+  "project_page": "https://github.com/torees/puppet-module-unbound.git",
+  "issues_url": "https://github.com/torees/puppet-module-unbound/issues",
   "dependencies": [
 
   ],
