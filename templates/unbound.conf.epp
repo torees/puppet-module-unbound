@@ -44,7 +44,7 @@ server:
         val-clean-additional: yes
         val-permissive-mode: no
         val-log-level: 1
-        include: /etc/unbound/local.d/*.conf
+        #include: /etc/unbound/local.d/*.conf
         ipsecmod-enabled: no
         ipsecmod-hook: "/usr/libexec/ipsec/_unbound-hook"
 
