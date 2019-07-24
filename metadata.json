@@ -2,7 +2,7 @@
   "name": "tsaterdal-unbound",
   "version": "0.1.0",
   "author": "Tore Saeterdal",
-  "summary": "",
+  "summary": "This module sets up a recursive DNS service with root hints using the unbound package.",
   "license": "Apache-2.0",
   "source": "",
   "dependencies": [
